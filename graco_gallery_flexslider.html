@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SCO 3001 Gallery</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="flexslider2/flexslider.css">
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="http://unslider.com/unslider.min.js"></script>-->
+		<script src="flexslider2/jquery.flexslider.js"></script>
+		
+		<style>
+		img {
+			min-height: 95vh;
+		}
+		.slides  {
+			background-color:black;
+			color:white;
+			font-size: 2em;
+			min-height: 5vh;
+			text-align:center;
+		}
+		/*
+		.banner {
+			margin:0;
+			padding:0;
+			position: relative;
+			overflow: auto;
+		}
+		img {
+			min-height: 100vh;
+		}
+		.banner li {
+			list-style:none;
+		}
+		.banner ul {
+			margin:0;
+			padding:0;
+		}
+		.banner ul li {
+			float: left;
+	
+		}*/
+		</style>
+	</head>
+	<header>
+		<h1>
+			SCO 3001 Operations Tour Project <br> Graco Gallery
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="graco_gallery_flexslider.html">Gallery</a></li>
+				<li><a href="team.html">Meet the Team</a></li>
+				<li><a href="miscellaneous.html">Miscellaneous</a></li>
+				<li><a href="deming.html">Deming's Corner</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="processdesign.html">Process Design</a></li>
+				<li><a href="quality.html">Quality</a></li>
+				<li><a href="capacity.html">Capacity</a></li>
+				<li><a href="inventory.html">Inventory</a></li>
+			</ul>
+		</nav>
+		<p style="clear:both overflow:hidden"><br></p>
+	</header>
+	<body>
+		<div class="flexslider">
+		    <ul class="slides">
+		        <li><img src="images/img1.JPG">Graco's production plant</li>
+		        <li><img src="images/IMG_3473.JPG">Display of some of their diaphragm pumps </li>
+		        <li><img src="images/IMG_3474.JPG">Same thing</li>
+		        <li><img src="images/IMG_3476.JPG">Here is a mill/grinder</li>
+		        <li><img src="images/IMG_3477.JPG">It sharpens up the plain metal casting</li>
+		        <li><img src="images/IMG_3478.JPG">Here is an enclosed saw.  It cuts effortlessly through steel bars.</li>
+		        <li><img src="images/IMG_3479.JPG">Machine here adds chamfers (curved edges) to part.</li>
+		        <li><img src="images/IMG_3481.JPG">Adhesives dispenser</li>
+		        <li><img src="images/IMG_3482.JPG">Same thing</li>
+		        <li><img src="images/IMG_3483.JPG">Robotic arm lifting 4' steel rods</li>
+		        <li><img src="images/IMG_3486.JPG">Graco cuts these bars in house to save money</li>
+		        <li><img src="images/IMG_3488.JPG">They are shipped in at 12'</li>
+		        <li><img src="images/IMG_3489.JPG">Fence is there for safety purposes</li>
+		        <li><img src="images/IMG_3490.JPG">Things to-be-painted on a hook</li>
+		        <li><img src="images/IMG_3491.JPG">Many different parts can be put onto hooks</li>
+		        <li><img src="images/IMG_3492.JPG">Same thing</li>
+		        <li><img src="images/IMG_3493.JPG">They first go through a giant washer to remove impurities</li>
+		        <li><img src="images/IMG_3494.JPG">A process-control whiteboard for employees to see</li>
+		        <li><img src="images/IMG_3495.JPG">Guy painting</li>
+		        <li><img src="images/IMG_3496.JPG">Don't forget to wear a mask.  It's toxic stuff!</li>
+		        <li><img src="images/IMG_3497.JPG">Paint is stored in this room.  Graco uses their own paint applicators!</li>
+		        <li><img src="images/IMG_3498.JPG">Another process-control whiteboard.  This time for output.</li>
+		        <li><img src="images/IMG_3499.JPG">A massive 1-inch diameter drill bit.</li>
+		        <li><img src="images/IMG_3500.JPG">Forget what this was</li>
+		        <li><img src="images/IMG_3501.JPG">View of their plant</li>
+		        <li><img src="images/IMG_3502.JPG">Notice the 5S chart!</li>
+		        <li><img src="images/IMG_3503.JPG"></li>  
+		    </ul>
+		   </div>
+
+	
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();  			/*FOR Unslider $(window).load(function() {$('.banner').unslider({speed: 500,delay: 3000,keys: true,dots: true,fluid: true });});*/
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+	<p style="padding: 0; margin-bottom: 20px;font-size: 1.8em; color:red; text-align: center"><em>Use Arrow Keys to Manually Navigate Through Slides, or Click on Icon on Leftmost or Rightmost Edge of Image.</em></p>
+
+
+	</body>	
+	<footer>
+				<nav>
+			<ul>
+
+				<li style="float:right; width:50%;"><a href="team.html">To Meet the Team</a></li>
+			</ul>
+		</nav>
+	</footer>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>SCO 3001 Gallery</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+		<style>
+			#bg {
+				background-image: url("images/backgroundhomepagetest1.gif");
+				background-repeat: no-repeat;
+				height: 100vh;
+				width: auto;
+				
+			}
+			#logo {
+				text-align: center;
+				padding-top: 100px;
+				height: 100vh;
+			}
+			#bluedot {
+				padding-top: 100px;
+				padding-left: 75px;
+				width: 100%;
+				height: 100vh;
+			}
+			#greydot {
+				padding-top: 100px;
+				padding-left: 75px;
+				width: 100%;
+				height: 100vh;
+			}
+			
+			#hqimage {
+				background-image: url("images/gracoheadquarters.jpg");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				height: 100vh;
+			}
+			#part3container, #container4  {               /*THIS MOTHER FUCKING WORKS FOR IMAGE FITTING FROM PHOTOSHOP*/
+				width: auto;
+				height: 100vh;
+			}
+			  #part3img, #part4 {
+				width: 100%;
+				height: 100%;
+				
+			}
+
+		</style>
+	</head>
+	<header>
+		<h1>
+			SCO 3001 Operations Tour Project <br> Home Page
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="graco_gallery_flexslider.html">Gallery</a></li>
+				<li><a href="team.html">Meet the Team</a></li>
+				<li><a href="miscellaneous.html">Miscellaneous</a></li>
+				<li><a href="deming.html">Deming's Corner</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="processdesign.html">Process Design</a></li>
+				<li><a href="quality.html">Quality</a></li>
+				<li><a href="capacity.html">Capacity</a></li>
+				<li><a href="inventory.html">Inventory</a></li>
+
+			</ul>
+		</nav>
+		<p style="clear:both overflow:hidden"></p>
+		
+	</header>
+	<body>
+		<div id="bg">
+			<ul id="scene">
+				 <li class="layer" id ="logo" data-depth="1.0"><img src="images/logotest1.gif"></li>
+				  <li class="layer" id="bluedot" data-depth="0.5"><img src="images/bluedottest1.gif"></li>
+				  <li class="layer" id ="greydot" data-depth="0.2"><img src="images/Graydogtest1.gif"></li>
+
+			</ul>
+		</div>
+		<script src="parallax.js"></script>
+		<script>
+			
+			var scene = document.getElementById('scene');
+			var parallax = new Parallax(scene);
+		</script>
+
+		<div id="hqimage"><p style="color: black; font-size: 2em; padding-left: 5em; padding-top: 1em;">Graco is an engineering company that was founded in 1926 by Russell Gray.<br> At the time, he was disgruntled parking lot attendant who knew there had to be a better way to lubricate cars than using hand-powered grease guns. Thus, he created his <br> own air-powered one.  They are currently headquartered in Minneapolis, Minnesota. </p></div>
+		<div id = "part3container"><img src="images/Home_Page_Part_3.gif" id="part3img"></div>
+		<div id="container4"><img src="images/Homepage_Part_4.gif" id="part4"></div>	
+
+					
+	</body>
+	<footer>
+				<nav>
+			<ul>
+				<li style="float:left; width: 50%"><a href="deming.html">To Deming's Corner</a></li>
+				<li style="float:right; width:50%;"><a href="processdesign.html">To Process Design</a></li>
+			</ul>
+		</nav>
+	</footer>
+</html>
